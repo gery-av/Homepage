@@ -1,0 +1,149 @@
+body {
+    background-color: #0e1116;
+}
+
+.card {
+    border: 2px solid #808080;
+    border-radius: 12px;
+    padding: 24px;
+    width: 530px;
+    height: 850px;
+    margin: 40px auto;
+    background: #0e1116;
+    color: #fff;
+    transition: border-color 0.3s, box-shadow 0.4s;
+    position: relative;
+}
+
+.card:hover {
+    border-color: #F5F3EC;
+    box-shadow: 0 0 12px 2px #bfbfbf88, 0 0 24px 4px #80808044;
+}
+
+.pfp-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    align-items: flex-start;
+}
+
+.pfp-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    align-items: flex-end;
+}
+
+.pfp {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px;
+    box-shadow: 0 0 16px 2px #222;
+    background: #222;
+    transition: border-color 0.3s, box-shadow 0.4s;
+    z-index: 1;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.avatar-decoration {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.name {
+    display: block;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #000a;
+    padding: 0 24px;
+}
+
+.button-list {
+    margin: 32px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 90%;
+    max-width: 370px;
+    font-family: 'JetBrains Mono', 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    background: #181818;
+    border: 1.5px solid #333;
+    border-radius: 10px;
+    padding: 10px 18px 10px 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+    gap: 14px;
+}
+
+.profile-btn:hover {
+    background: #232323;
+    border-color: #F5F3EC;
+    box-shadow: 0 2px 12px #bfbfbf22;
+}
+
+.btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.btn-arrow {
+    margin-left: auto;
+    font-size: 1.1rem;
+    color: #bfbfbf;
+    transition: color 0.2s;
+}
+
+.profile-btn:hover .btn-arrow {
+    color: #F5F3EC;
+}
+
+.source-link {
+    position: absolute;
+    left: 24px;
+    bottom: 18px;
+    font-size: 0.93rem;
+    color: #fff;
+    opacity: 0.7;
+    font-family: 'JetBrains Mono', 'Poppins', 'Segoe UI', Arial, sans-serif;
+    text-decoration: none;
+    transition: color 0.2s, opacity 0.2s;
+    z-index: 10;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.source-link:hover {
+    color: #cfcfcf;
+    background: rgba(255, 255, 255, 0.08);
+    opacity: 1;
+}
